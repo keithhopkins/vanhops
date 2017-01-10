@@ -15,6 +15,8 @@ import { AboutComponent } from './components/about/about.component';
 import { InstagramComponent } from './components/instagram/instagram.component';
 import { RegistryComponent } from './components/registry/registry.component';
 
+import { FirebaseService } from './services/firebase.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,9 @@ import { RegistryComponent } from './components/registry/registry.component';
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [
+    FirebaseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
