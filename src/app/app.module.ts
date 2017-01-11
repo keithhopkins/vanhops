@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AppRoutingModule }     from './app.routing';
+import { CollapseDirective } from 'ng2-bootstrap/collapse';
 
 import './core/rxjs-extensions';
 import { firebaseConfig } from './core/firebaseConfig';
@@ -24,7 +25,8 @@ import { FirebaseService } from './services/firebase.service';
     AboutComponent,
     DetailsComponent,
     InstagramComponent,
-    RegistryComponent
+    RegistryComponent,
+    CollapseDirective
   ],
   imports: [
     BrowserModule,

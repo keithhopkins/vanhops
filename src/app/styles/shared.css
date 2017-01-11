@@ -1,0 +1,21 @@
+.partybox {
+  height: 50%;
+  width: 24%;
+  background-color: rgba(78, 76,76, 0.8);
+  color: white;
+  border-radius: 5px;
+  border: 2px solid grey;
+  margin: 3px;
+  padding: 3px;
+}
+
+.ourstory {
+  height: 120%;
+  background-color: rgba(78, 76,76, 0.8);
+  color: white;
+  border-radius: 5px;
+  border: 2px solid grey;
+  margin: 10px;
+  padding: 7px;
+  font-size: 17px;
+}

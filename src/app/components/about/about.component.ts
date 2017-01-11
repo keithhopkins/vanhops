@@ -5,7 +5,8 @@ import { Party } from '../../models/Party';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './about.component.html'
+  templateUrl: './about.component.html',
+  styleUrls: ['../../styles/shared.css']
 })
 export class AboutComponent implements OnInit {
   bridesmaids: Party[];

@@ -9,3 +9,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+header, h2 {
+  font-family: 'Press Start 2P', cursive;
+}
