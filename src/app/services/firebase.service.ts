@@ -2,11 +2,13 @@ import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 import { Party } from '../models/Party';
+import { Registry } from '../models/Registry';
 
 @Injectable()
 export class FirebaseService {
   bridesmaids: FirebaseListObservable<Party[]>;
   groomsmen: FirebaseListObservable<Party[]>;
+  registry: FirebaseListObservable<Registry[]>;
 
   constructor(private af: AngularFire) { }
 
@@ -20,5 +22,11 @@ export class FirebaseService {
     this.groomsmen = this.af.database.list('/party/groomsmen') as
     FirebaseListObservable<Party[]>
     return this.groomsmen;
+  }
+
+  getRegistry() {
+    this.registry = this.af.database.list('/registry') as
+    FirebaseListObservable<Registry[]>
+    return this.registry;
   }
 }
